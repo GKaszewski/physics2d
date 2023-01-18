@@ -13,8 +13,6 @@ public:
 
 	void move(sf::Vector2f& direction) { body.move(direction); }
 	void move(float dx, float dy) { body.move(dx, dy); }
-
-	void draw(sf::RenderWindow& window) const;
 private:
 	sf::RectangleShape& body;
 };

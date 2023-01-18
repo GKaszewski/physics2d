@@ -1,8 +1,6 @@
 #include "Collider.hpp"
 
-Collider::Collider(sf::RectangleShape& body) : body(body) {
-	/*body.setFillColor(sf::Color::Blue);*/
-}
+Collider::Collider(sf::RectangleShape& body) : body(body) {}
 
 Collider::~Collider() = default;
 
@@ -50,12 +48,4 @@ bool Collider::check_collision(Collider& other, sf::Vector2f& direction, float p
 	}
 
 	return false;
-}
-
-void Collider::draw(sf::RenderWindow& window) const {
-	sf::RectangleShape rect;
-	rect.setSize(body.getSize());
-	rect.setPosition(body.getPosition());
-	rect.setFillColor(sf::Color::Blue);
-	window.draw(rect);
 }
