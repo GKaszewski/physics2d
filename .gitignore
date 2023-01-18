@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+/.vs/physics2d
+/binx64
+/physics2d.vcxproj.user
+/physics2d.vcxproj.filters
